@@ -1,0 +1,58 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    txtresult: TEdit;
+    BtnBS: TButton;
+    BtnCE: TButton;
+    BtnC: TButton;
+    BtnPM: TButton;
+    Btn7: TButton;
+    Btn8: TButton;
+    Btn2: TButton;
+    BtnPLUS: TButton;
+    Btn4: TButton;
+    Btn5: TButton;
+    Btn6: TButton;
+    BtnSbt: TButton;
+    Btn1: TButton;
+    Btn9: TButton;
+    Btn3: TButton;
+    BtnMTPL: TButton;
+    Btn0: TButton;
+    BtnPnt: TButton;
+    BtnIgl: TButton;
+    BtnDvs: TButton;
+    procedure Btn7Click(Sender: TObject);
+  private
+    { Private declarations }
+    num1, num2, result: String:
+    oper: Char;
+
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Btn7Click(Sender: TObject);
+begin
+if txtresult.Text ='0' then
+   txtresult.Text :='7'
+   else
+   txtresult.Text :=txtresult.Text + '7';
+
+end;
+
+end.
